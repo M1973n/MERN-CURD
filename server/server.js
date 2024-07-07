@@ -32,7 +32,7 @@ app.use("/api/admin", adminRoute);
 
 app.use(errorMiddleware);
 const PORT = process.env.PORT || dotenv;
-// const PORT = 5000;
+
 connectDB().then(() => {
     app.listen(PORT, () => {
         console.log(`Server is running at port : ${PORT}`);
