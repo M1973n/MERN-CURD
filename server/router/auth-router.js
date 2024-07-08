@@ -4,7 +4,7 @@ const authcontroller = require("../controllers/auths-controller");
 const signupSchema = require('../validators/auth-validator');
 const validate = require ("../middleware/validate-middleware.js");
 const authMiddleware = require ("../middleware/auth-middleware.js");
-
+const bcrypt = require('bcryptjs');
 
 
 
