@@ -8,7 +8,7 @@ export const AdminUsers = () => {
 
   const getAllUserData = async () => {
     try {
-      const response = await fetch("https://mern-curd-58nn.onrender.com/api/admin/users", {
+      const response = await fetch("https://mern-curd-eg5h.onrender.com/api/admin/users", {
         method: "GET",
         headers: {
           Authorization: authorizationToken,
@@ -38,7 +38,7 @@ export const AdminUsers = () => {
   const deleteUser = async (id) => {
     try {
       const response = await fetch(
-        `https://mern-curd-58nn.onrender.com/api/admin/users/delete/${id}`,
+        `https://mern-curd-eg5h.onrender.com/api/admin/users/delete/${id}`,
         {
           method: "DELETE",
           headers: {

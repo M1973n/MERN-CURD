@@ -14,7 +14,7 @@ const cors = require ("cors");
 
 // handling cors
 const corsOptions = {
-    origin: "http://maniyaadash.netlify.app" ,
+    origin: "https://maniyaadash.netlify.app" ,
     methods: "GET, POST, DELETE, PATCH, HEAD",
     credentials: true,
 }
