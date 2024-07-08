@@ -18,7 +18,7 @@ export const AdminUpdate = () => {
   const getSingleUserData = async () => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/admin/users/${params.id}`,
+         `https://mern-curd-58nn.onrender.com/api/admin/users/${params.id}`,
         {
           method: "GET",
           headers: {
@@ -52,7 +52,7 @@ export const AdminUpdate = () => {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/admin/users/update/${params.id}`,
+        `https://mern-curd-58nn.onrender.com/api/admin/users/update/${params.id}`,
         {
           method: "PATCH",
           headers: {
