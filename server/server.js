@@ -14,7 +14,7 @@ const cors = require ("cors");
 
 // handling cors
 const corsOptions = {
-    origin: "https://mern-curd-58nn.onrender.com",
+    origin: "http://maniyaadash.netlify.app" ,
     methods: "GET, POST, DELETE, PATCH, HEAD",
     credentials: true,
 }
@@ -30,7 +30,7 @@ app.use("/api/admin", adminRoute);
 
 app.use(errorMiddleware);
 
-const PORT = 5000 || "https://mern-curd-58nn.onrender.com" ;
+const PORT = 5000 ;
 connectDB().then(() => {
     app.listen(PORT, () => {
         console.log(`Server is running at port : ${PORT}`);
